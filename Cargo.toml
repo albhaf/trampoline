@@ -1,0 +1,16 @@
+[package]
+name = "trampoline"
+version = "0.1.0"
+authors = ["Albert Hafvenström <albhaf@gmail.com>"]
+build = "build.rs"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+objc = "0.2.1"
+block = "0.1.6"
+libc = "0.2.15"
